@@ -18,22 +18,7 @@
     <h1 style="font-size: 4rem;">Find Your Zodiac Sign</h1>
 
     <!-- result -->
-    <div class="result">
-        <?php 
-            include 'zodiac_api.php';
-
-            if(!empty($_POST['date_of_birth'])){
-                $date_of_birth = $_POST['date_of_birth'];
-                $zodiac_sign = zodiac_sign($date_of_birth);
-                echo "<div class='zodiac-wrapper'>
-                          <img class='img-fluid zodiac-img shadow-border' src='img/{$zodiac_sign}.jpg' alt='cannot find an image'>
-                          <p class='zodiac-label'>Your sign is <span style='text-transform:uppercase'>$zodiac_sign</span></p>
-                      </div>";
-            }else{
-                echo "<div><h1 style='animation: fadeIn 3s;'>Choose Your Date of Birth</h1></div>";
-            }
-        ?>
-    </div>
+    <?php include 'result.php';?>
 
     <!-- input -->
     <div class="input">
@@ -46,7 +31,6 @@
 </section>
 
 <!-- Bootstrap core JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
