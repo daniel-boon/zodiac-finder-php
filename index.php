@@ -14,21 +14,15 @@
 </head>
 <body>
     
-<section class="main-wrapper container shadow-border">
-    <h1 style="font-size: 4rem;">Find Your Zodiac Sign</h1>
+    <section class="main-wrapper container shadow-border">
+        <h1 style="font-size: 4rem;">Find Your Zodiac Sign</h1>
 
-    <!-- result -->
-    <?php include 'result.php';?>
+        <?php 
+            include 'result.php';
+            include 'date_of_birth_input.php';
+        ?>
 
-    <!-- input -->
-    <div class="input">
-        <form method="POST" id="date-form">
-            <input type="date" name="date_of_birth" value="yyyy-mm-dd" required>
-            <button id="submit-form" class="btn btn-dark btn-find">Find</button>
-        </form>
-    </div>
-
-</section>
+    </section>
 
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
