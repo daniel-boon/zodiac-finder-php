@@ -1,0 +1,82 @@
+body{
+    background: #264653;  /* fallback for old browsers */
+    
+    font-family: 'Teko', sans-serif;
+    overflow: hidden;
+}
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 100px;
+    width: 55%;
+    padding: 15px 0 35px 0;
+    border-radius: 16px;
+}
+
+.shadow-border{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 3px;
+    background-color: rgb(248, 247, 249);
+}
+
+.result{
+    width: 40%;
+    height: 250px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zodiac-wrapper{
+    text-align: center;
+}
+.zodiac-img{
+    object-fit: cover;
+    border-radius: 50%;
+    animation: fadeIn 3.5s ease-in both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -15%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.zodiac-label{
+    margin-top: 15px;
+    font-size: 40px;
+    color:rgb(110, 67, 38);
+    animation: fadeIn 3.5s;
+}
+
+input[type=date]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 4px;
+     border: 1px solid #462816;
+     color: #555555;
+     width: 250px;
+     height: 40px;
+     padding-left: 10px;
+     font-size: 20px;
+    }
+
+input[type=text]:focus {
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #a0d18c;
+    color: #2d9fd9;
+}
+
+.btn-find{
+    width: 80px;
+    margin-left: 10px;
+}
