@@ -2,8 +2,8 @@
     <?php 
             include 'zodiac_api.php';
 
-            if(!empty($_POST['date_of_birth'])){
-                $date_of_birth = $_POST['date_of_birth'];
+            if(!empty($_GET['date_of_birth'])){
+                $date_of_birth = $_GET['date_of_birth'];
                 $zodiac_sign = zodiac_sign($date_of_birth);
                 echo "<div class='zodiac-wrapper'>
                         <img class='img-fluid zodiac-img shadow-border' src='img/{$zodiac_sign}.jpg' alt='cannot find an image'>
